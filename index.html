@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gangster RPG</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  </head>
+  <body>
+    <div id="game-container">
+      <div id="main-view">
+        <div id="map"></div>
+      </div>
+      <div id="inventory">
+        <div id="date-time"></div>
+        <button id="centerMapOnCharacter">Zentriere auf Charakter</button>
+        <div class="status-bar" id="health-bar">Lebensenergie</div>
+        <div class="status-bar" id="mood-bar">Stimmung</div>
+        <div id="terrain-display">Ist auf: Unbekannt</div>
+        <div class="money" id="money-display">$</div>
+        <div id="address-display">Aktuelle Adresse:</div>
+        <div id="step-counter">Schritte: 0</div>
+        <div id="distance-counter">Fiktive Distanz: 0 m</div>
+        <div id="address-input-container">
+          <input
+            type="text"
+            id="address-input"
+            placeholder="Geben Sie eine Adresse ein"
+          />
+        </div>
+        <div id="menu">
+          <button id="skills">
+            <img
+              src="https://via.placeholder.com/30/00ff00/000000?text=🧠"
+              alt="Skills"
+            />
+          </button>
+          <button id="quests">
+            <img
+              src="https://via.placeholder.com/30/ff0000/000000?text=❓"
+              alt="Quest"
+            />
+          </button>
+          <button id="phone">
+            <img
+              src="https://via.placeholder.com/30/0000ff/ffffff?text=📞"
+              alt="Handy"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
